@@ -8,3 +8,4 @@ RUN curl -fsSL https://deb.nodesource.com/setup_18.x \
 RUN apt update \
     && apt-get install -y \
     nodejs
+RUN npm install --global yarn
