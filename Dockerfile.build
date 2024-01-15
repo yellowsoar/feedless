@@ -1,0 +1,10 @@
+
+# https://hub.docker.com/_/gradle
+FROM gradle:7.6.3-jdk17
+
+# https://github.com/nodesource/distributions
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x \
+    | bash -
+RUN apt update \
+    && apt-get install -y \
+    nodejs
